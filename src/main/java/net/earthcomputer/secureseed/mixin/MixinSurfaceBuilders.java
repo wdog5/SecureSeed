@@ -2,7 +2,7 @@ package net.earthcomputer.secureseed.mixin;
 
 import net.earthcomputer.secureseed.Globals;
 import net.earthcomputer.secureseed.IChunkRandom;
-import net.minecraft.world.gen.ChunkRandom;
+import net.minecraft.util.math.random.ChunkRandom;
 import net.minecraft.world.gen.surfacebuilder.FrozenOceanSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.NetherForestSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.NetherSurfaceBuilder;

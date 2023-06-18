@@ -2,8 +2,8 @@ package net.earthcomputer.secureseed.mixin;
 
 import net.earthcomputer.secureseed.IWorldChunk;
 import net.minecraft.util.math.ChunkPos;
+import net.minecraft.util.math.random.ChunkRandom;
 import net.minecraft.world.chunk.WorldChunk;
-import net.minecraft.world.gen.ChunkRandom;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

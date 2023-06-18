@@ -4,7 +4,7 @@ import net.earthcomputer.secureseed.Globals;
 import net.earthcomputer.secureseed.Hashing;
 import net.earthcomputer.secureseed.IChunkRandom;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.gen.ChunkRandom;
+import net.minecraft.util.math.random.ChunkRandom;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Unique;
@@ -149,7 +149,7 @@ public class MixinChunkRandom extends Random implements IChunkRandom {
     public int nextInt(int bound) {
         if (!secure) return super.nextInt(bound);
 
-        int bits = MathHelper.log2DeBruijn(bound);
+        int bits = MathHelper.ceilLog2(bound);
         int result;
         do {
             result = (int) getBits(bits);

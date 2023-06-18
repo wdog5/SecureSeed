@@ -2,8 +2,8 @@ package net.earthcomputer.secureseed.mixin;
 
 import net.earthcomputer.secureseed.Globals;
 import net.earthcomputer.secureseed.IChunkRandom;
+import net.minecraft.util.math.random.ChunkRandom;
 import net.minecraft.world.biome.source.MultiNoiseBiomeSource;
-import net.minecraft.world.gen.ChunkRandom;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

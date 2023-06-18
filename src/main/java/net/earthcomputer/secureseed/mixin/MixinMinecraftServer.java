@@ -4,7 +4,7 @@ import net.earthcomputer.secureseed.Globals;
 import net.earthcomputer.secureseed.IChunkRandom;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.world.gen.ChunkRandom;
+import net.minecraft.util.math.random.ChunkRandom;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
